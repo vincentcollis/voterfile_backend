@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # CSV.foreach(Rails.root.join('/Users/vince/Development/Flatiron/Ballot_Secure/voterfile_backend/db/data_basic.csv'), headers: true) do |row|
 #Must use  ^^^^ this code when testing because data base wont seed
@@ -6,7 +5,7 @@
 
 require 'csv'
 CSV.foreach(Rails.root.join('../voterfile_backend/lib/test_data.csv'), headers: true) do |row|
-CSV.foreach(Rails.root.join('../voterfile_backend/lib/NY_Voter_data.csv'), headers: true) do |row|
+# CSV.foreach(Rails.root.join('../voterfile_backend/lib/NY_Voter_data.csv'), headers: true) do |row|
 
   Voter.create({
     lastname: row[0],
@@ -97,12 +96,3 @@ end
 # end
 
 # puts "There are now #{Voter.count} rows in the transactions table"
-=======
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
->>>>>>> 9e94778119a830385f7410413b727498f65dc6fa

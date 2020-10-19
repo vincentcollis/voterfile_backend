@@ -16,11 +16,10 @@ ActiveRecord::Schema.define(version: 1) do
   enable_extension "plpgsql"
 
   create_table "voters", force: :cascade do |t|
-<<<<<<< HEAD
     t.string "lastname"
     t.string "firstname"
     t.integer "housenumber"
-    t.integer "streetname"
+    t.string "streetname"
     t.string "city"
     t.integer "zip5"
     t.integer "zip4"
@@ -34,13 +33,6 @@ ActiveRecord::Schema.define(version: 1) do
     t.integer "congressionaldistrict"
     t.integer "senatedistrict"
     t.integer "assemblydistrict"
-=======
-    t.string "firstname"
-    t.string "lastname"
-    t.string "dob"
-    t.string "city"
-    t.string "party"
->>>>>>> 9e94778119a830385f7410413b727498f65dc6fa
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
